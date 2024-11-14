@@ -14,7 +14,10 @@ print("\nHere are some credit card options we offer:")
 for option in credit_card_account:
     print(option)
 
-card_choice = input("\nfirst, what type of credit card account are you looking for? Please type the number (1, 2, or 3): ")
+
+card_choice = ""
+while card_choice not in ["1", "2", "3"]:
+    card_choice = input("\nfirst, what type of credit card account are you looking for? Please type the number (1, 2, or 3): ")
 
 
 if card_choice == "1":
@@ -50,11 +53,11 @@ print(f"\nThanks, {name}! I have your details as follows:\n"
 
 ssn_or_id = input("\nNext, I’ll need your social security number (or government ID) for identity verification: ")
 
-print("here are the option")
-verification_option =[
-        "Email",
-        "Phone Number"
-]
+print("Here are the verification options:")
+verification_option = [
+    "Email", 
+    "Phone Number"
+    ]
 
 
 for option in verification_option:
@@ -70,6 +73,11 @@ elif verification_choice.lower() == "phone number":
     print(f"\nGreat! We will send a verification code to your phone number, {name}. Please check your messages.")
 else:
     print("\nSorry, I didn't understand that. Please choose either 'Email' or 'Phone Number'.")
+
+
+
+
+print(f"Thank you, {name}, your verification was successful and your credit card application is now in process!")
 
 
 
