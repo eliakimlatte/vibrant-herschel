@@ -80,8 +80,3 @@ else:
 print(f"Thank you, {name}, your verification was successful and your credit card application is now in process!")
 
 
-
-
-print(f"Thank you, {name}, your verification was successful and your credit card application is now in process!")
-
-
